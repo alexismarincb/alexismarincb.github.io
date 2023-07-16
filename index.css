@@ -1,1 +1,202 @@
+*{
+    box-sizing: border-box;
+}
 
+section{
+    margin: 30px 50px;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    position: sticky;
+    top: -1px;
+    z-index: 1;
+}
+
+h1{
+    font-family: "Alegreya Sans";
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h2{
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: 400;
+}
+
+h3{
+    font-family: Dosis;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+div{
+    display: inline-block;
+    padding: 20px;
+}
+
+li,
+p{
+    font-family: "Work Sans";
+    font-size: 15px;
+    font-weight: 400;
+    list-style-type: none;
+}
+
+.Colors{
+    border: 1px solid gray;
+    padding: 10px 30px;
+}
+
+li.Color{
+    display:inline-block;
+    margin: 10px;
+    padding: 40px;
+    
+}
+
+li.Color#LIGHTER-BLUE{
+    background-color: #2540D9;
+    color: white;
+    transition: rotate 2s;
+}
+
+li.Color#DARKER-BLUE{
+    background-color: #2138BF;
+    color: white;
+    transition: rotate 2s;
+}
+
+li.Color#BULBASAUR-GREEN{
+    background-color: #45BF92;
+    transition: rotate 2s;
+}
+
+li.Color#CHARMANDER-ORANGE{
+    background-color: #F2AC29;
+    transition: rotate 2s;
+}
+
+li.Color#CHARMALEON-RED{
+    background-color: #F25757;
+    transition: rotate 2s;
+}
+
+li.Color#WHITE{
+    background-color: white;
+    border: 1px dotted black;
+    transition: rotate 2s;
+}
+
+.Fonts{
+    border: 1px solid gray;
+    padding: 10px 30px;
+}
+
+.Work-Sans{
+    font-family: "Work-Sans";
+    font-size: 30px;
+}
+
+.Work-Sans-Regular-400{
+    font-family: "Work-Sans";
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.Work-Sans-Medium-500{
+    font-family: "Work-Sans";
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.Work-Sans-Extra-Bold-800{
+    font-family: "Work-Sans";
+    font-weight: 800;
+    font-size: 20px;  
+}
+
+.Alegreya-Sans{
+    font-family: "Alegreya Sans";
+    font-size: 30px;
+}
+
+.Alegreya-Sans-Light-300{
+    font-family: "Alegreya Sans";
+    font-weight: 300;
+    font-size: 20px;  
+}
+
+.Alegreya-Sans-Bold-700{
+    font-family: "Alegreya Sans";
+    font-weight: 700;
+    font-size: 20px; 
+}
+
+.Roboto{
+    font-family: "Roboto";
+    font-size: 30px;
+}
+
+.Roboto-Thin-100{
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 20px; 
+}
+
+.Roboto-Regular-400{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 20px; 
+}
+
+.Dosis{
+    font-family: "Dosis";
+    font-size: 30px;
+
+}
+
+.Dosis-Extra-Light-200{
+    font-family: "Dosis";
+    font-weight: 200;
+    font-size: 20px; 
+}
+
+.Dosis-Regular-400{
+    font-family: "Dosis";
+    font-weight: 400;
+    font-size: 20px; 
+}
+
+.Text-Styles{
+    border: 1px solid gray;
+    padding: 10px 30px;
+}
+
+/* Button Transitions*/
+
+li.Color#LIGHTER-BLUE:hover{
+    rotate: 360deg;
+}
+
+li.Color#DARKER-BLUE:hover{
+    rotate: 360deg;
+}
+
+li.Color#BULBASAUR-GREEN:hover{
+    rotate: 360deg;
+}
+
+li.Color#CHARMANDER-ORANGE:hover{
+    rotate: 360deg;
+}
+
+li.Color#CHARMALEON-RED:hover{
+    rotate: 360deg;
+}
+
+li.Color#WHITE:hover{
+    rotate: 360deg;
+}
