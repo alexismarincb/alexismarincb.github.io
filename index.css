@@ -1,236 +1,281 @@
-*{
-    box-sizing: border-box;
-}
-
-body{
-    margin: auto 90px;
-}
-
-section{
-    margin: 30px 50px;
-}
-
-header{
-    background-color: white;
-    width: 100%;
-    position: sticky;
-    top: -1px;
-    z-index: 1;
-}
-
-img{
-    width: 50px;
-    height: 50px;
-    position: relative;
-    top: 5px;
-    display: inline-block;
-    margin-right: 20px;
-}
-
-span.One {
-    color: #2540D9;
-}
-
-span.Two {
-    color: #45BF92;
-}
-
-span.Three {
-    color: #F25757;
-}
-
-span.Four {
-    color: #F2AC29;
-}
-
 
 h1{
-    color: black;
-    font-family: "Alegreya Sans";
-    font-size: 40px;
-    font-weight: 700;
+    font-family: 'Yellowtail', cursive;
+    color: #2A593E;
 }
 
 h2{
-    font-family: "Roboto";
-    font-size: 25px;
+    font-family: roboto;
     font-weight: 400;
 }
 
-h3{
-    font-family: Dosis;
-    font-size: 20px;
-    font-weight: 400;
+ul{
+    font-family: Roboto;
 }
 
 div{
-    display: inline-block;
-    padding: 20px;
+    font-family: roboto;
 }
 
-li,
-p{
-    font-family: "Work Sans";
-    font-size: 15px;
-    font-weight: 400;
-    list-style-type: none;
+.underheader{
+    position: relative;
+    top: 6rem; /* To offset for fixed header. */
 }
 
-.Colors{
-    border: 1px solid gray;
+/*Header*/
+
+nav{
+    background-color: white;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0px;
+}
+
+
+.logo{
+    height: 6rem;
+}
+
+
+.text{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+h1.header{
+    color:#2A593E;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+
+ul.line{
+    cursor: pointer;
+    display: flex;
+}
+
+
+li{
     padding: 10px 30px;
+    border:#C0D98B 2px solid;
+    margin-right: 30px;
+    border-radius: 10%;
 }
 
-li.Color{
-    display:inline-block;
-    box-sizing: content-box;
-    margin: 10px;
-    padding: 40px;
-    height: 20%;
-    width: 20%;
+li:hover{
+    
+    background-color: #C0D98B;
+}
+
+li:active{
+    color: white;
+}
+
+
+
+/*Main*/
+
+main{
+    align-content:center;
+    background-image: url("../Imagen4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 45rem;
+    width: 100%;
+    
+   
+}
+
+.title{                                   /*This affects other titles*/
+    display: flex;
+    font-size: 2.5rem;
+    height: 50px;
+    justify-content: center;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 20px 0px;
+}
+
+.square{
+    background-color: hsla(135, 28%, 51%, .7) ;
+    border-radius: 5%;
+    color:#2A593E;
+    min-width: 400px;
+    position: relative;
+    top: 150px;
+    left: 5%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.squareitem{
+    text-align: center;
+}
+
+
+h1.squareitem{
+    font-size: 2.5rem;
+    font-weight: 100;
+    word-spacing: 5px;
+    margin: 0px 10px;
+}
+
+h2.squareitem{
+    font-size: 3em;
+    font-weight: 800;
+    word-spacing: 5px;
+    position: relative;
+    bottom: 20px;
     
 }
 
-li.Color#LIGHTER-BLUE{
-    background-color: #2540D9;
+a{
     color: white;
-    transition: rotate 2s;
+    font-size: 1.5rem;
+    padding: 20px;
+    border: 2px #2A593E solid;
+    min-height: 60px;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 7%;
+    position: relative;
+    bottom: 20px;
 }
 
-li.Color#DARKER-BLUE{
-    background-color: #2138BF;
+a:hover{
+    color:#2A593E;
+    cursor: pointer;
+    background-color: #C0D98B;
+}
+
+a:active{
     color: white;
-    transition: rotate 2s;
 }
 
-li.Color#BULBASAUR-GREEN{
-    background-color: #45BF92;
-    transition: rotate 2s;
+
+/*Tutors*/
+
+
+.background{
+    background-color: #2A593E;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: fit-content;
 }
 
-li.Color#CHARMANDER-ORANGE{
-    background-color: #F2AC29;
-    transition: rotate 2s;
+.flag{
+    border: 6px solid #C0D98B;
+    margin: 40px 80px 10px 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+    height:150px;
+    width: 200px;
 }
 
-li.Color#CHARMALEON-RED{
-    background-color: #F25757;
-    transition: rotate 2s;
+.flag:hover{
+    cursor: pointer;
+    border: 6px solid white;
 }
 
-li.Color#WHITE{
-    background-color: white;
-    border: 1px dotted black;
-    transition: rotate 2s;
+.flag:active{
+    position: relative;
+    top: 3px;
 }
 
-.Fonts{
-    border: 1px solid gray;
-    padding: 10px 30px;
+p.name{
+    color: #C0D98B  ;
+    position: relative;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;  
+    margin-bottom: 40px;                   /*Try to use the method for the ABOUT US area for the flags it might be easier and better for the text distribution*/
 }
 
-.Work-Sans{
-    font-family: "Work-Sans";
-    font-size: 30px;
+/*About Us*/
+
+
+.us{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.Work-Sans-Regular-400{
-    font-family: "Work-Sans";
-    font-weight: 400;
-    font-size: 20px;
+.division{
+    /*border: red solid 1px;*/
+    color: #102026;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;  
 }
 
-.Work-Sans-Medium-500{
-    font-family: "Work-Sans";
-    font-weight: 500;
-    font-size: 20px;
+.lineimage{
+    /*border: red solid 1px;*/
+    height: 100px;
 }
 
-.Work-Sans-Extra-Bold-800{
-    font-family: "Work-Sans";
-    font-weight: 800;
-    font-size: 20px;  
+/*Our Team*/
+
+
+.team{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.Alegreya-Sans{
-    font-family: "Alegreya Sans";
-    font-size: 30px;
+.member{
+    /*border: red solid 1px;*/
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;  
 }
 
-.Alegreya-Sans-Light-300{
-    font-family: "Alegreya Sans";
-    font-weight: 300;
-    font-size: 20px;  
+.person{
+    border:#C0D98B solid 6px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 50%;
 }
 
-.Alegreya-Sans-Bold-700{
-    font-family: "Alegreya Sans";
-    font-weight: 700;
-    font-size: 20px; 
+/*Footer*/
+
+footer{
+    background-color: #C0D98B;
+    width: 100%;
 }
 
-.Roboto{
-    font-family: "Roboto";
-    font-size: 30px;
+div.content{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.copyright{
+    padding: 20px 10px;
+    text-align: center;
 }
 
-.Roboto-Thin-100{
-    font-family: "Roboto";
-    font-weight: 100;
-    font-size: 20px; 
+
+.location{
+    padding: 20px 10px;
+    text-align: center;
 }
 
-.Roboto-Regular-400{
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 20px; 
-}
 
-.Dosis{
-    font-family: "Dosis";
-    font-size: 30px;
-
-}
-
-.Dosis-Extra-Light-200{
-    font-family: "Dosis";
-    font-weight: 200;
-    font-size: 20px; 
-}
-
-.Dosis-Regular-400{
-    font-family: "Dosis";
-    font-weight: 400;
-    font-size: 20px; 
-}
-
-.Text-Styles{
-    border: 1px solid gray;
-    padding: 10px 30px;
-}
-
-/* Button Transitions*/
-
-li.Color#LIGHTER-BLUE:hover{
-    rotate: 360deg;
-}
-
-li.Color#DARKER-BLUE:hover{
-    rotate: 360deg;
-}
-
-li.Color#BULBASAUR-GREEN:hover{
-    rotate: 360deg;
-}
-
-li.Color#CHARMANDER-ORANGE:hover{
-    rotate: 360deg;
-}
-
-li.Color#CHARMALEON-RED:hover{
-    rotate: 360deg;
-}
-
-li.Color#WHITE:hover{
-    rotate: 360deg;
-}
