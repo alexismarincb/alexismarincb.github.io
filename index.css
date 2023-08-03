@@ -76,7 +76,28 @@ li:active{
     color: white;
 }
 
+@media only screen and (min-width: 950px) and (orientation: portrait) {
+    nav{
+        height: 10%;
+    }
 
+    h1.header{
+        font-size: 6rem;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    li{
+        display: none;
+    }
+
+    .underheader{
+        position: relative;
+        top: 12rem;
+    }
+}
 
 /*Main*/
 
@@ -160,7 +181,43 @@ a:active{
     color: white;
 }
 
+@media only screen and (min-width: 950px) and (orientation: portrait) {
 
+    h1.squareitem{
+        font-size: 4.25rem;
+    }
+
+    h2.squareitem{
+        font-size: 4.5em;
+    }
+
+    a{
+        border: 5px #2A593E solid;
+        font-size: 3rem;
+        padding: 20px;
+        min-height: 60px;
+        width: 400px;
+        margin: 20px auto;
+    }
+
+    .square{
+        width: 870px;
+        height: 500px;
+    }
+
+    main{
+        height: 1000px;
+    }
+
+    .title{
+        font-size: 5rem;
+        height: 125px;
+    }
+
+    .titletext{
+        padding: 30px;
+    }
+}
 /*Tutors*/
 
 
@@ -203,6 +260,23 @@ p.name{
     margin-bottom: 40px;                   /*Try to use the method for the ABOUT US area for the flags it might be easier and better for the text distribution*/
 }
 
+@media only screen and (min-width: 950px) and (orientation: portrait) {
+    .flag{
+        border: 12.5px #C0D98B solid;
+        margin: 100px 80px 25px 80px;
+        height: 375px;
+        width: 500px;
+    }
+
+    .flag:hover{
+        cursor: pointer;
+        border: 12.5px solid white;
+    }
+
+    p.name{
+        font-size: 3.75rem;
+    }
+}
 /*About Us*/
 
 
@@ -226,6 +300,16 @@ p.name{
 .lineimage{
     /*border: red solid 1px;*/
     height: 100px;
+}
+
+@media only screen and (min-width: 950px) and (orientation: portrait){
+    .lineimage{
+        height: 500px
+    }
+
+    .division{
+        font-size: 3.75rem;
+    }
 }
 
 /*Our Team*/
@@ -254,6 +338,16 @@ p.name{
     border-radius: 50%;
 }
 
+@media only screen and (min-width: 950px) and (orientation: portrait){
+    .member{
+        font-size: 2.75rem;
+    }
+
+    .team{
+        margin-top: 5rem;
+    }
+}
+
 /*Footer*/
 
 footer{
@@ -276,6 +370,17 @@ div.content{
 .location{
     padding: 20px 10px;
     text-align: center;
+}
+
+@media only screen and (min-width: 950px) and (orientation: portrait){
+    footer{
+        margin-top: 3rem        ;
+        height: 10rem;
+        font-size: 2rem;
+    }
+    div.content{
+        flex-direction: column;
+    }
 }
 
 
