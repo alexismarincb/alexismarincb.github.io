@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LearninForest</title>
+        <link href="C:\Projects\LearninForest\Resources\CSS\reset.css" rel="stylesheet">
+        <link href="C:\Projects\LearninForest\Resources\CSS\index.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;700&family=Dosis:wght@200;400&family=Roboto:wght@100;400&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <nav>
+                <img class="logo" src="C:\Projects\LearninForest\Resources\Imagen2.png">
+                    <div class="text">
+                        <h1 class="header">LearninForest</h1>
+                        <ul class="line">
+                            <li>Tutors</li>
+                            <li>Log In</li>
+                            <li>Become a Tutor</li>
+                        </ul>
+                    </div>
+            </nav>
+        </header>
+
+        <!--Underheader-->
+        <div class="underheader">
+
+        <!-- Main -->
+        <main>
+            <div class="square">
+                <h1 class="squareitem">"Learn what you need when you want"</h1>
+                <h2 class="squareitem">START NOW!</h2>
+                <div class="squareitem button"><a>Find your tutor</a></div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="content">
+                <div class="copyright">© 2023  LearninForest, All Rights Reserved</div>
+                <div class="location">Designed in Aguascalientes</div>
+            </div>
+        </footer>
+        </div> 
+        <script src = "index.js">
+        </script>
+    </body>
+</html>
