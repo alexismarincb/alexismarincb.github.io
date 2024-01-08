@@ -76,6 +76,21 @@ li:active{
     color: white;
 }
 
+button.light-dark{
+    display: contents;
+}
+
+#light{
+    margin-right: 30px;
+    height: 2rem;
+}
+
+#dark{
+    margin-right: 30px;
+    height: 2rem;
+    display: none;
+}
+
 @media only screen and (min-width: 950px) and (orientation: portrait) {
     nav{
         height: 10%;
@@ -96,6 +111,14 @@ li:active{
     .underheader{
         position: relative;
         top: 12rem;
+    }
+
+    #light{
+        height: 3rem;
+    }
+    
+    #dark{
+        height: 3rem;
     }
 }
 
@@ -381,6 +404,69 @@ div.content{
     div.content{
         flex-direction: column;
     }
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode h1.header {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode h2 {
+    color: #ffffff;
+}
+
+body.dark-mode ul {
+    color: #ffffff;
+}
+
+body.dark-mode div {
+    color: #ffffff;
+}
+
+body.dark-mode .underheader {
+    color: #ffffff;
+}
+
+/* Add more specific selectors for other elements as needed */
+
+body.dark-mode nav {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode li {
+    background-color: #333333;
+    border: #ffffff 2px solid;
+}
+
+body.dark-mode li:hover {
+    background-color: #555555;
+}
+
+body.dark-mode a {
+    color: #ffffff;
+}
+
+body.dark-mode a:hover {
+    color: #1a1a1a;
+    background-color: #555555;
+}
+
+body.dark-mode footer {
+    background-color: #333333;
+}
+
+body.dark-mode #light{
+    display: none;
+}
+
+body.dark-mode #dark{
+    display: block;
 }
 
 
